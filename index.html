@@ -8,6 +8,18 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <img src="tpose.webp" alt="great t-pose" id="tpose">
+        <video src="tpose.webm" loop muted id="tpose">
     </body>
+    <script>
+        const tpose = document.getElementById('tpose')
+        let playing = false
+        tpose.addEventListener('click', _ => {
+            if (!playing) {
+                tpose.play()
+            } else {
+                tpose.pause()
+            }
+            playing = !playing
+        })
+    </script>
 </html>
