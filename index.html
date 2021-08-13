@@ -8,18 +8,18 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <video src="tpose.webm" loop muted id="tpose">
+        <video src="tpose.webm" loop muted id="tpose"></video>
+        <script>
+            const tpose = document.getElementById('tpose')
+            let playing = false
+            tpose.addEventListener('click', _ => {
+                if (!playing) {
+                    tpose.play()
+                } else {
+                    tpose.pause()
+                }
+                playing = !playing
+            })
+        </script>
     </body>
-    <script>
-        const tpose = document.getElementById('tpose')
-        let playing = false
-        tpose.addEventListener('click', _ => {
-            if (!playing) {
-                tpose.play()
-            } else {
-                tpose.pause()
-            }
-            playing = !playing
-        })
-    </script>
 </html>
