@@ -68,7 +68,7 @@ function init() {
 
     function on_key_press(e) {
         for (let [str, dict] of Object.entries(secrets)) {
-            if (e.key === str[dict.count]) {
+            if (e.key.toLowerCase() === str[dict.count]) {
                 dict.count++;
                 if (dict.count === str.length) {
                     dict.count = 0;
