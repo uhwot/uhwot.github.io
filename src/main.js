@@ -34,6 +34,7 @@ function init() {
     controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.enableZoom = false;
+    controls.enablePan = false;
 
     const light = new THREE.AmbientLight(0x222222, 0.7); // soft white light
     scene.add(light);
@@ -65,7 +66,7 @@ function init() {
         }
     }
 
-    function on_key_down(e) {
+    function on_key_press(e) {
         for (let [str, dict] of Object.entries(secrets)) {
             if (e.key === str[dict.count]) {
                 dict.count++;
@@ -104,7 +105,17 @@ function init() {
     );
 
     document.addEventListener('click', on_click);
-    document.addEventListener('keydown', on_key_down);
+
+    const mobile_keyboard = document.getElementById('mobile_keyboard');
+    if ('ontouchstart' in document.documentElement) {
+        mobile_keyboard.setAttribute('style', '');
+        function on_mobile_keyb_input(e) {
+            mobile_keyboard.value = 'open keyboard';
+            on_key_press({key: e.data});
+        }
+        document.addEventListener('input', on_mobile_keyb_input);
+    }
+    document.addEventListener('keypress', on_key_press);
 }
 
 function animate(time) {

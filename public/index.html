@@ -5,11 +5,12 @@
         <title>uh wot</title>
         <meta name="description" content="bruh moment">
         <meta name="author" content="uh wot">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <style>
             body { margin: 0; }
             canvas { display: block; }
             #fart {
-                position:absolute;
+                position: absolute;
                 left: 0;
                 right: 0;
                 bottom: 0;
@@ -18,6 +19,22 @@
                 width: 100%;
                 height: 100%;
                 object-fit: fill;
+            }
+
+            #mobile_keyboard {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 2%;
+                width: 99.9%;
+                text-align: center;
+                font-size: 5vh;
+                color: #fff;
+                opacity: 30%;
+                background: transparent;
+                border: none;
+                outline: none;
+                caret-color: transparent;
             }
 
             /* code from https://codepen.io/nohoid/pen/kIfto */
@@ -37,6 +54,7 @@
     <body>
         <canvas id="c"></canvas>
         <video id="fart" autoplay loop></video>
+        <input id="mobile_keyboard" type="text" value="open keyboard" style="display: none;">
         <script type="module" src="build/bundle.js"></script>
     </body>
 </html>
