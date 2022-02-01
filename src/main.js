@@ -111,7 +111,7 @@ function init() {
         mobile_keyboard.setAttribute('style', '');
         function on_mobile_keyb_input(e) {
             mobile_keyboard.value = 'open keyboard';
-            on_key_press({key: e.data});
+            on_key_press({key: e.data[e.data.length - 1]});
         }
         document.addEventListener('input', on_mobile_keyb_input);
     }
