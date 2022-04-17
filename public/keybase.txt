@@ -54,3 +54,60 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/uhwot
 
 ==================================================================
+
+==================================================================
+https://keybase.io/uhwot
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://uhwot.github.io
+  * I am uhwot (https://keybase.io/uhwot) on keybase.
+  * I have a public key ASDPEjHglSouA50yyTdaQaYjq3BtFlyXAQ0eeAWfYUTaewo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204b51961eca5ee9b6c807d0b5a178968bcedccd357e88e557879531b4f7a3ec1c0a",
+      "host": "keybase.io",
+      "kid": "0120cf1231e0952a2e039d32c9375a41a623ab706d165c97010d1e78059f6144da7b0a",
+      "uid": "dd48bf5d2b0fea740995db7db36efc19",
+      "username": "uhwot"
+    },
+    "merkle_root": {
+      "ctime": 1650218542,
+      "hash": "7aba93564fca64a84213a5987517e011f7e232dc4968fe95c8ff9baa396b21f8cfb4f4bf8fcb11470d330db0c76312341c80fda70854a2840ef9356b1eaa2636",
+      "hash_meta": "14801e6d4d63ef163885dc4829ce82f2519606db8eb4000fd54ad8550fa39afd",
+      "seqno": 22312318
+    },
+    "service": {
+      "entropy": "cE3gEaSJbprmuKNnPnOhMx5V",
+      "hostname": "uhwot.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.3"
+  },
+  "ctime": 1650218562,
+  "expire_in": 504576000,
+  "prev": "daa40cd215f0df6e72a4a6c2a1223ecc94449075e57fb373853e836d45951762",
+  "seqno": 37,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgzxIx4JUqLgOdMsk3WkGmI6twbRZclwENHngFn2FE2nsKp3BheWxvYWTESpcCJcQg2qQM0hXw325ypKbCoSI+zJREkHXlf7NzhT6DbUWVF2LEIGgFagimmmbFFdOmm1RUzs3n/MTI1pIjGxt9TNr4HF+/AgHCo3NpZ8RA004QVB8cwcp8xSsQcteNwG9r7VZHr09nZY3EaWKytbQ1UEJVq+490pnse+xWxl2NJ6qYTrPE4nvPB64IMqbnCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJrbSPeGpeKtlx6E64zlJRCFpdAJ+ZfpO8JtUxANlOgTo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/uhwot
+
+==================================================================
