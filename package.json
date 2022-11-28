@@ -1,11 +1,11 @@
 {
   "devDependencies": {
-    "esbuild": "^0.14.21",
-    "gh-pages": "^3.2.3"
+    "esbuild": "^0.15.16",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "@tweenjs/tween.js": "^18.6.4",
-    "three": "^0.137.5"
+    "three": "^0.146.0"
   },
   "scripts": {
     "build": "esbuild src/main.js --bundle --sourcemap --outfile=public/build/bundle.js",
