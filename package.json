@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "esbuild src/main.js --bundle --sourcemap --outfile=public/build/bundle.js",
-    "build-prod": "esbuild src/main.js --bundle --minify --outfile=public/build/bundle.js --target=chrome98,firefox97",
+    "build-prod": "esbuild src/main.js --bundle --minify --outfile=public/build/bundle.js --target=chrome107,firefox107",
     "devserver": "esbuild src/main.js --bundle --sourcemap --outfile=public/build/bundle.js --servedir=public"
   }
 }
